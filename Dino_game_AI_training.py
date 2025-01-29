@@ -409,7 +409,7 @@ def train_agent(agent, episodes, save_interval, model_path):
             collision_reward = -500 if collision else 0.5
 
             # Action-based reward (penalty or reward for jumping, crouching, or standing)
-            action_reward = -10 if action == 0 else -10 if action == 1 else 1
+            action_reward = -10 if action == 0 else -10 if action == 1 else 1.5
 
             # Combine rewards
             total_reward = collision_reward + action_reward

@@ -413,7 +413,7 @@ def play_game():
             collision_reward = -500 if collision else 0.5
 
             # Action-based reward
-            action_reward = -10 if action == 0 else -10 if action == 1 else 1
+            action_reward = -10 if action == 0 else -10 if action == 1 else 1.5
 
             # Combine rewards
             total_reward = collision_reward + action_reward
